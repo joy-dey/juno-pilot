@@ -28,7 +28,7 @@
 </script>
 
 <aside
-	class="fixed bottom-0 flex h-fit w-full flex-row overflow-hidden bg-slate-50 px-2 py-3.5 transition-all duration-200 ease-linear hover:w-40 md:top-1/2 md:left-4 md:w-16 md:-translate-y-1/2 md:flex-col md:rounded-4xl"
+	class="fixed bottom-0 flex h-fit w-full flex-row overflow-hidden bg-slate-50 p-2 transition-all duration-200 ease-linear hover:w-40 md:top-1/2 md:left-4 md:w-16 md:-translate-y-1/2 md:flex-col md:rounded-4xl md:px-2 md:py-3.5"
 >
 	<a href="/" class="hidden flex-col items-center gap-4 p-2 md:flex md:flex-row">
 		<div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100">
@@ -41,14 +41,14 @@
 		{#each navigationOptions as { icon, label, href }}
 			<a
 				{href}
-				class="flex w-full flex-col items-center gap-4 gap-y-2 p-2 opacity-50 md:flex-row {currentPath.includes(
+				class="flex w-full flex-col items-center gap-4 gap-y-1.5 p-2 text-slate-900 opacity-30 md:flex-row {currentPath.includes(
 					href
 				)
 					? 'opacity-100'
 					: ''}"
 			>
 				<div
-					class="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-slate-100 md:h-8 md:w-8"
+					class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-200 md:h-8 md:w-8"
 				>
 					<i class="ri-{icon} text-2xl md:text-xl"></i>
 				</div>
